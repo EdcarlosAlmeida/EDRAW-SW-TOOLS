@@ -29,7 +29,7 @@ namespace EDRAW_SwTools{
         foreach (var path in Directory.GetDirectories(sourcePath, "*",SearchOption.AllDirectories)){
             Directory.CreateDirectory(path.Replace(sourcePath,targetPath));
         }
-        // Copy file
+        // Copy file teste
         foreach (var iFile in Directory.GetFiles(sourcePath,"*",SearchOption.AllDirectories)){
             File.Copy(iFile , iFile.Replace(sourcePath,targetPath),true);
         }
